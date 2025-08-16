@@ -1,0 +1,40 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "systemd_service",
+      "camelcase": "SystemdService",
+      "title": "SystemdService",
+      "scope": "source.systemd_service",
+      "file-types": [
+        "systemd_service"
+      ],
+      "injection-regex": "^systemd_service$",
+      "class-name": "TreeSitterSystemdService"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Syntax Highlight for .service files",
+    "authors": [
+      {
+        "name": "jd-apprentice",
+        "email": "contacto@jonathan.com.ar",
+        "url": "https://jonathan.com.ar/"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/jd-apprentice/zed-systemd"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}

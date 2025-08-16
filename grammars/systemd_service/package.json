@@ -1,0 +1,23 @@
+{
+  "name": "tree-sitter-systemd-service",
+  "version": "0.1.0",
+  "description": "Tree-sitter grammar for systemd .service files",
+  "main": "bindings/node",
+  "scripts": {
+    "build": "tree-sitter generate && node-gyp build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tree-sitter-cli": "^0.25.8",
+    "nan": "^2.23.0"
+  },
+  "keywords": [
+    "tree-sitter",
+    "systemd",
+    "service",
+    "grammar",
+    "zed"
+  ],
+  "author": "Jonathan D. <contacto@jonathan.com.ar>",
+  "license": "MIT"
+}

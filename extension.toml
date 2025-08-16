@@ -1,0 +1,22 @@
+[extension]
+name = "systemd-services"
+version = "0.0.1"
+authors = ["Jonathan D. <contacto@jonathan.com.ar>"]
+description = "Systemd service file syntax highlighting"
+repository = "https://github.com/jd-apprentice/zed-systemd"
+
+[languages.systemd-service]
+name = "Systemd Service"
+grammar = "systemd-service"
+scope = "source.systemd-service"
+path_suffixes = [
+    "service",
+    "socket",
+    "target",
+    "timer",
+    "mount",
+    "automount",
+    "path",
+    "slice",
+    "swap"
+]

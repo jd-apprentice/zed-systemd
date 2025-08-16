@@ -1,0 +1,18 @@
+[Unit]
+Description=Example Service for Zed Extension
+After=network.target
+
+# This is a comment using a hash symbol
+; This is a comment using a semicolon
+
+[Service]
+Type=simple
+User=zed
+Group=zed
+WorkingDirectory=/home/zed/app
+ExecStart=/usr/bin/env /home/zed/app/my-app --port 8080
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
